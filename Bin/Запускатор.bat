@@ -37,15 +37,15 @@ if not defined choice goto m1
 if "%choice%"=="0" (powershell -executionpolicy bypass -file InstallSDK.ps1) && goto m1
 if "%choice%"=="00" (Start "" "Bin\gcloud_init.bat") && echo Рекомендується одразу додати всi три комплекти акаунтiв && goto m1
 if "%choice%"=="000" (Start "" "Bin\SDK_Patch.bat") && echo Patch виконано && goto m1
-if "%choice%"=="1" (Start "" "Bin\Start50.bat") && exit
-if "%choice%"=="11" (Start "" "Bin\Start50_2.bat") && exit
-if "%choice%"=="111" (Start "" "Bin\Start50_3.bat") && exit
-if "%choice%"=="2" (Start "" "Bin\Start100.bat") && exit
-if "%choice%"=="22" (Start "" "Bin\Start100_2.bat") && exit
-if "%choice%"=="222" (Start "" "Bin\Start100_3.bat") && exit
-if "%choice%"=="3" (Start "" "Bin\Start200.bat") && exit
-if "%choice%"=="33" (Start "" "Bin\Start200_2.bat") && exit
-if "%choice%"=="333" (Start "" "Bin\Start100_3.bat") && exit
+if "%choice%"=="1" (Start "Запускатор" "Bin\Start50.bat") && exit
+if "%choice%"=="11" (Start "Запускатор" "Bin\Start50_2.bat") && exit
+if "%choice%"=="111" (Start "Запускатор" "Bin\Start50_3.bat") && exit
+if "%choice%"=="2" (Start "Запускатор" "Bin\Start100.bat") && exit
+if "%choice%"=="22" (Start "Запускатор" "Bin\Start100_2.bat") && exit
+if "%choice%"=="222" (Start "Запускатор" "Bin\Start100_3.bat") && exit
+if "%choice%"=="3" (Start "Запускатор" "Bin\Start200.bat") && exit
+if "%choice%"=="33" (Start "Запускатор" "Bin\Start200_2.bat") && exit
+if "%choice%"=="333" (Start "Запускатор" "Bin\Start100_3.bat") && exit
 Echo.
 Echo.
 Echo  ! Не коректне введення
