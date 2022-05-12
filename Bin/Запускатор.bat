@@ -1,5 +1,6 @@
 @echo off
 chcp 866
+mode con:cols=120 lines=30
 Echo.
 Echo.
 Echo.
