@@ -35,7 +35,7 @@ Echo 	"333" - 200 сеансiв (акаунти 401-600 (третiй комплект))
 Echo.
 Set /p choice=" Ваш вибiр: "
 if not defined choice goto m1
-if "%choice%"=="0" (powershell -executionpolicy bypass -file InstallSDK.ps1) && goto m1
+if "%choice%"=="0" (powershell -executionpolicy bypass -file Bin\InstallSDK.ps1) && echo Google Cloud SDK install running && goto m1
 if "%choice%"=="00" (Start "" "Bin\gcloud_init.bat") && echo Рекомендується одразу додати всi три комплекти акаунтiв && goto m1
 if "%choice%"=="000" (Start "" "Bin\SDK_Patch.bat") && echo Patch виконано && goto m1
 if "%choice%"=="1" (Start "Запускатор" "Bin\Start50.bat") && exit
