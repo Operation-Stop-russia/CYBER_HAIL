@@ -2,7 +2,6 @@
 
 (echo 1 && echo y && echo n) | gcloud init --skip-diagnostics
 
-FOR /L %%G IN (2,1,600) DO (
-(echo 1 && echo %%G && echo n) | gcloud init --skip-diagnostics
-)
+for /l %%q in (0) do gcloud auth login
+
 Exit
