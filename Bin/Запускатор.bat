@@ -16,8 +16,8 @@ Echo 	Для забезпечення режиму 24/7 потрiбно мати 3 комплекти акаунтiв на 1 ПК i 
 Echo.
 Echo 	Для налаштування CloudSDK:
 Echo 	введiть "0"   щоб завантажити та встановити GoogleCloudSDK
-Echo 	введiть "00"  щоб запустити gcloud_init.bat (для додавання всiх акаунтiв!)
-Echo 	введiть "000" щоб виконати Patch GoogleSDK (!!!)
+Echo 	введiть "00"  щоб запустити gcloud_init.bat (для додавання акаунтiв!)
+Echo 	введiть "000" щоб виконати Patch GoogleSDK (!)
 Echo.
 Echo 	Для розгортання та запуску атаки:
 Echo.
@@ -37,7 +37,7 @@ Set /p choice=" Ваш вибiр: "
 if not defined choice goto m1
 if "%choice%"=="0" (powershell -executionpolicy bypass -file Bin\InstallSDK.ps1) && echo Google Cloud SDK install running && goto m1
 if "%choice%"=="00" (Start "" "Bin\gcloud_init.bat") && echo Рекомендується одразу додати всi три комплекти акаунтiв && goto m1
-if "%choice%"=="000" (Start "" "Bin\SDK_Patch.bat") && echo Patch виконано && goto m1
+if "%choice%"=="000" (Start "" "Bin\SDK_Patcher.exe") && echo Патчер запущено && goto m1
 if "%choice%"=="1" (Start "Запускатор" "Bin\Start50.bat") && exit
 if "%choice%"=="11" (Start "Запускатор" "Bin\Start50_2.bat") && exit
 if "%choice%"=="111" (Start "Запускатор" "Bin\Start50_3.bat") && exit
