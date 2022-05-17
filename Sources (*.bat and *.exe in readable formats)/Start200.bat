@@ -1,6 +1,6 @@
 @Echo off
 Start "" "Bin\Skip Putty_SecurityAlert (AutoAccept).exe"
-Start "" "Bin\‡£®àâ â®à.exe"
+Start "" "Bin\Ð—Ð³Ð¾Ñ€Ñ‚Ð°Ñ‚Ð¾Ñ€.exe"
 
 FOR /L %%G IN (1,1,50) DO (
 (echo 1 && echo %%G && echo n) | gcloud init --skip-diagnostics
@@ -28,9 +28,9 @@ Start /min cmd.exe /c gcloud cloud-shell ssh --authorize-session
 )
 TIMEOUT 20
 taskkill /F /IM python.exe
-Start "" "Bin\‡ ªà¨¢ â®à ­¥ ªâ¨¢­¨å (Putty inactive closing).exe"
+Start "" "Bin\Ð—Ð°ÐºÑ€Ð¸Ð²Ð°Ñ‚Ð¾Ñ€ Ð½ÐµÐ°ÐºÑ‚Ð¸Ð²Ð½Ð¸Ñ… (Putty inactive closing).exe"
 
-taskkill /F /IM "‡£®àâ â®à.exe"
+taskkill /F /IM "Ð—Ð³Ð¾Ñ€Ñ‚Ð°Ñ‚Ð¾Ñ€.exe"
 taskkill /F /IM "Skip Putty_SecurityAlert (AutoAccept).exe"
 
 Start "" "Bin\CtrlAltTab.exe"
