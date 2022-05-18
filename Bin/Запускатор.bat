@@ -1,6 +1,7 @@
 @echo off
 chcp 866
-mode con:cols=120 lines=30
+mode con:cols=120 lines=32
+title CYBER HAIL
 Echo.
 Echo.
 Echo.
@@ -9,15 +10,15 @@ Echo.
 Echo 			"КIБЕР ГРАД"		 (Operation "Stop russia")
 Echo.
 Echo 	Увага! Для успiшного розгортання має бути встановлений i пропатчений GoogleCloudSDK
-Echo 		та виконана процедура iнiцiалiзацiї акаунтiв (gcloud_init) !!!
+Echo 		та виконана процедура iнiцiалiзацiї/авторизацiї акаунтiв (gcloud init) !!!
 Echo.
-Echo 	Тривалiсть сеансу GoogleShell - 12 годин. Тижнева квота на використання GShell акаунтом - 60 годин.
+Echo 	Тривалiсть сеансу GoogleShell - до 12 годин. Тижнева квота на використання GShell акаунтом - 60 годин.
 Echo 	Для забезпечення режиму 24/7 потрiбно мати 3 комплекти акаунтiв на 1 ПК i використовувати їх почерзi.
 Echo.
 Echo 	Для налаштування CloudSDK:
 Echo 	введiть "0"   щоб завантажити та встановити GoogleCloudSDK
 Echo 	введiть "00"  щоб запустити gcloud_init.bat (для додавання акаунтiв!)
-Echo 	введiть "000" щоб виконати Patch GoogleSDK (!)
+Echo 	введiть "000" щоб виконати патч GoogleCloudSDK (!)
 Echo.
 Echo 	Для розгортання та запуску атаки:
 Echo.
@@ -33,6 +34,8 @@ Echo 	"222" - 100 сеансiв (акаунти 201-301 (третiй комплект))
 Echo 	"33"  - 200 сеансiв (акаунти 201-400 (другий комплект))
 Echo 	"333" - 200 сеансiв (акаунти 401-600 (третiй комплект))
 Echo.
+Echo 	Щоб вiдкликати токени та скасувати авторизацiї всiх акаунтiв введiть "3210" (без потреби НЕ застосовувати!)
+Echo.
 Set /p choice=" Ваш вибiр: "
 if not defined choice goto m1
 if "%choice%"=="0" (powershell -executionpolicy bypass -file Bin\InstallSDK.ps1) && echo Google Cloud SDK install running && goto m1
@@ -47,9 +50,10 @@ if "%choice%"=="222" (Start "Запускатор" "Bin\Start100_3.bat") && exit
 if "%choice%"=="3" (Start "Запускатор" "Bin\Start200.bat") && exit
 if "%choice%"=="33" (Start "Запускатор" "Bin\Start200_2.bat") && exit
 if "%choice%"=="333" (Start "Запускатор" "Bin\Start100_3.bat") && exit
+if "%choice%"=="3210" echo Iнiцiйовано процес вiдкликання токенiв та видалення iнформацiї про авторизованi акаунти. Для вiдмiни закрийте термiнал. Щоб продовжити натиснiть будь-яку кнопку && pause && gcloud auth revoke --all && pause && Start "" "Bin\Запускатор.bat" 
 Echo.
 Echo.
-Echo  ! Не коректне введення
+Echo  ! Некоректне введення
 goto m1
 
 
