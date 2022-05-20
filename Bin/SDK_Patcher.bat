@@ -1,11 +1,11 @@
 @Echo off
 mode con:cols=100 lines=18
-title GCloudSDK Patcher
+title CYBER HAIL. GCloudSDK Patcher
 Echo.
 :m2
 Echo.
 Echo.
-Echo  		SDK Patcher for CYBER HAIL		 (Operation "Stop russia")
+Echo  		Patcher for GCloudSDK 			 	 (Operation "Stop russia")
 Echo.
 Echo.
 Echo 	введiть "1"  щоб виконати патч для автоматичного встановлення та запуску mhddos_proxy
