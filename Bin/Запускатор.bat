@@ -56,7 +56,7 @@ if "%choice%"=="333" (Start "Запускатор" "Bin\Start100_3.bat") && exit
 if "%choice%"=="4" (Start "Запускатор" "Bin\Start200.bat") && exit
 if "%choice%"=="44" (Start "Запускатор" "Bin\Start200_2.bat") && exit
 if "%choice%"=="444" (Start "Запускатор" "Bin\Start100_3.bat") && exit
-if "%choice%"=="43210" echo Iнiцiйовано процес вiдкликання токенiв та видалення iнформацiї про авторизованi акаунти. Для вiдмiни закрийте термiнал. Щоб продовжити натиснiть будь-яку кнопку && pause && gcloud auth revoke --all && pause && Start "" "Bin\Запускатор.bat" 
+if "%choice%"=="43210" echo Iнiцiйовано процес вiдкликання токенiв та видалення iнформацiї про авторизованi акаунти. Для вiдмiни закрийте термiнал.  Щоб продовжити натиснiть будь-яку кнопку && pause && gcloud auth revoke --all && pause && Start "" "Bin\Запускатор.bat" 
 Echo.
 Echo.
 Echo  ! Некоректне введення
