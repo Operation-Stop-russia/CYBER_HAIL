@@ -1,1 +1,0 @@
-curl -L https://raw.githubusercontent.com/Operation-Stop-russia/Gcloudshell_ddos/main/proxy_finder.sh | bash
