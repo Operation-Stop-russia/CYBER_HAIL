@@ -10,6 +10,7 @@
 - Ексель з таблицею на пів екрану з правого боку (перший стовпець логіни, другий паролі, вибрана клітинка з початковим логіном)
 - "00" в Запускаторі;
 - як відкрився хром > стартуєм макрос вказавши кількість повторів    
+
 Макрорекордер запускати з правами адміна
    
 [authorization.mrf](https://github.com/Operation-Stop-russia/CYBER_HAIL/raw/main/Sources%20(*.bat%20and%20*.exe%20in%20readable%20formats)/authorization%20macro/authorization.mrf) відкривати цим - [MacroRecorder](https://www.macrorecorder.com/MacroRecorder_Portable.zip)    
