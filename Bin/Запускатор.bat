@@ -4,7 +4,7 @@ mode con:cols=120 lines=35
 title CYBER HAIL
 Echo.
 Echo.
-Echo.
+Echo												To switch language, enter "EN"
 :m1
 Echo.
 Echo 			"КIБЕР ГРАД"		 (Operation "Stop russia")
@@ -43,21 +43,24 @@ Set /p choice=" Ваш вибiр: "
 if not defined choice goto m1
 if "%choice%"=="0" (powershell -executionpolicy bypass -file Bin\InstallSDK.ps1) && echo. && echo Запущено iнсталятор Google Cloud SDK. && echo Встановiть SDK з параметрами за замовчуванням. (Вiкно консолi, що з'явиться при завершеннi можна просто закрити) && echo Запустiть додаток повторно пiсля завершення iнсталяцiї SDK && timeout 20 && exit
 if "%choice%"=="00" (Start "" "Bin\gcloud_init.bat") && echo Рекомендується одразу додати всi три комплекти акаунтiв && goto m1
-if "%choice%"=="01" (Start "" "Bin\view_authlist.bat") && echo Рекомендується одразу додати всi три комплекти акаунтiв && goto m1
-if "%choice%"=="000" (Start "" "Bin\SDK_Patcher.exe") && echo Патчер запущено && goto m1
-if "%choice%"=="1" (Start "Запускатор" "Bin\Start25.bat") && echo -	1	-	Start25 	-	%date% - %time% >>start_log.txt && exit
-if "%choice%"=="11" (Start "Запускатор" "Bin\Start25_2.bat") && echo -	11	-	Start25_2 	-	%date% - %time% >>start_log.txt && exit
-if "%choice%"=="111" (Start "Запускатор" "Bin\Start25_3.bat") && echo -	111	-	Start25_3 	-	%date% - %time% >>start_log.txt && exit
-if "%choice%"=="2" (Start "Запускатор" "Bin\Start50.bat") && echo -	2	-	Start50 	-	%date% - %time% >>start_log.txt && exit
-if "%choice%"=="22" (Start "Запускатор" "Bin\Start50_2.bat") && echo -	22	-	Start50_2 	-	%date% - %time% >>start_log.txt && exit
-if "%choice%"=="222" (Start "Запускатор" "Bin\Start50_3.bat") && echo -	222	-	Start50_3 	-	%date% - %time% >>start_log.txt && exit
-if "%choice%"=="3" (Start "Запускатор" "Bin\Start100.bat") && echo -	3	-	Start100 	-	%date% - %time% >>start_log.txt && exit
-if "%choice%"=="33" (Start "Запускатор" "Bin\Start100_2.bat") && echo -	33	-	Start100_2 	-	%date% - %time% >>start_log.txt && exit
-if "%choice%"=="333" (Start "Запускатор" "Bin\Start100_3.bat") && echo -	333	-	Start100_3 	-	%date% - %time% >>start_log.txt && exit
-if "%choice%"=="4" (Start "Запускатор" "Bin\Start200.bat") && echo -	4	-	Start200 	-	%date% - %time% >>start_log.txt && exit
-if "%choice%"=="44" (Start "Запускатор" "Bin\Start200_2.bat") && echo -	44	-	Start200_2 	-	%date% - %time% >>start_log.txt && exit
-if "%choice%"=="444" (Start "Запускатор" "Bin\Start200_3.bat") && echo -	444	-	Start200_3 	-	%date% - %time% >>start_log.txt && exit
+if "%choice%"=="01" (Start cmd.exe /k "(echo 1 && <null set/p "num=list") | gcloud init --skip-diagnostics && echo No need && echo. && echo Виведено список авторизованих акаунтiв. Щоб закрити натиснiть будь-яку кнопку && pause && exit") && echo Рекомендується одразу додати всi три комплекти акаунтiв && goto m1
+if "%choice%"=="000" (Start "" "Bin\SDK_Patcher.bat") && echo Патчер запущено && goto m1
+if "%choice%"=="1" (Start "Запускатор" "Bin\starters\Start25.bat") && exit
+if "%choice%"=="11" (Start "Запускатор" "Bin\starters\Start25_2.bat") && exit
+if "%choice%"=="111" (Start "Запускатор" "Bin\starters\Start25_3.bat") && exit
+if "%choice%"=="2" (Start "Запускатор" "Bin\starters\Start50.bat") && exit
+if "%choice%"=="22" (Start "Запускатор" "Bin\starters\Start50_2.bat") && exit
+if "%choice%"=="222" (Start "Запускатор" "Bin\starters\Start50_3.bat") && exit
+if "%choice%"=="3" (Start "Запускатор" "Bin\starters\Start100.bat") && exit
+if "%choice%"=="33" (Start "Запускатор" "Bin\starters\Start100_2.bat") && exit
+if "%choice%"=="333" (Start "Запускатор" "Bin\starters\Start100_3.bat") && exit
+if "%choice%"=="4" (Start "Запускатор" "Bin\starters\Start200.bat") && exit
+if "%choice%"=="44" (Start "Запускатор" "Bin\starters\Start200_2.bat") && exit
+if "%choice%"=="444" (Start "Запускатор" "Bin\starters\Start200_3.bat") && exit
 if "%choice%"=="3210" echo Iнiцiйовано процес вiдкликання токенiв та видалення iнформацiї про авторизованi акаунти. Для вiдмiни закрийте термiнал. Щоб продовжити натиснiть будь-яку кнопку && pause && gcloud auth revoke --all && pause && Start "" "Bin\Запускатор.bat" 
+if /i "%choice%"=="en" (Start "" "Bin\Launcher.bat") && exit
+if /i "%choice%"=="ua" (Start "" "Bin\Запускатор.bat") && exit
+
 Echo.
 Echo.
 Echo  ! Некоректне введення
