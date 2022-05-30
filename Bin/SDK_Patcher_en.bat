@@ -8,11 +8,11 @@ Echo.
 Echo  		Patcher for GoogleCloudSDK 			 (Operation "Stop russia")
 Echo.
 Echo.
-Echo 	enter "1"  to execute the patch to start sessions with the install and run mhddos_proxy command
+Echo 	enter "1"  to perform the patch to start sessions with installation and running mhddos_proxy
 Echo.
-Echo 	enter "2"  to execute the patch to start sessions with the install and run db1000n command
+Echo 	enter "2"  to perform the patch to start sessions with installation and running db1000n
 Echo.
-Echo 	enter "3"  to execute the patch to start sessions with the install and run mhddos_proxy command
+Echo 	enter "3"  to perform the patch to start sessions with installation and running mhddos_proxy
 Echo			   using IP CloudShell machines (Test!)
 Echo.
 Echo.

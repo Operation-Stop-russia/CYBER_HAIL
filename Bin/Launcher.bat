@@ -41,9 +41,9 @@ Echo 	To revoke tokens and de-authorize all accounts, enter "3210" (if no need -
 Echo.
 Set /p choice=" Your choice: "
 if not defined choice goto m1
-if "%choice%"=="0" (powershell -executionpolicy bypass -file Bin\InstallSDK.ps1) && echo. && echo Google Cloud SDK installer launched. && echo Install the SDK with default settings. (The console window that appears when completed - you can simply close) && echo Restart the application after the SDK installation is complete && timeout 20 && exit
-if "%choice%"=="00" (Start "" "Bin\gcloud_init.bat") && echo Recommended add all three sets of accounts && goto m1
-if "%choice%"=="01" (Start cmd.exe /k "(echo 1 && <null set/p "num=list") | gcloud init --skip-diagnostics && echo No need && echo. && echo The list of authorized accounts is displayed. Press any key to close && pause && exit") && echo Recommended add all three sets of accounts && goto m1
+if "%choice%"=="0" (powershell -executionpolicy bypass -file Bin\InstallSDK.ps1) && echo. && echo Google Cloud SDK installer launched. && echo Install the SDK with default settings. (The console window which appears after installation can be simply closed) && echo Restart the application after the SDK installation is complete && timeout 20 && exit
+if "%choice%"=="00" (Start "" "Bin\gcloud_init.bat") && echo It is recommended to add all three sets of accounts && goto m1
+if "%choice%"=="01" (Start cmd.exe /k "(echo 1 && <null set/p "num=list") | gcloud init --skip-diagnostics && echo No need && echo. && echo The list of authorized accounts is displayed. Press any key to close && pause && exit") && echo It's recommended to add all three sets of accounts && goto m1
 if "%choice%"=="000" (Start "" "Bin\SDK_Patcher_en.bat") && echo Patcher launched && goto m1
 if "%choice%"=="1" (Start "Запускатор" "Bin\starters\Start25.bat") && exit
 if "%choice%"=="11" (Start "Запускатор" "Bin\starters\Start25_2.bat") && exit
