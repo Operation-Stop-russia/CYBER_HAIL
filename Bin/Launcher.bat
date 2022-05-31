@@ -45,18 +45,18 @@ if "%choice%"=="0" (powershell -executionpolicy bypass -file Bin\InstallSDK.ps1)
 if "%choice%"=="00" (Start "" "Bin\gcloud_init.bat") && echo It is recommended to add all three sets of accounts && goto m1
 if "%choice%"=="01" (Start cmd.exe /k "(echo 1 && <null set/p "num=list") | gcloud init --skip-diagnostics && echo No need && echo. && echo The list of authorized accounts is displayed. Press any key to close && pause && exit") && echo It's recommended to add all three sets of accounts && goto m1
 if "%choice%"=="000" (Start "" "Bin\SDK_Patcher_en.bat") && echo Patcher launched && goto m1
-if "%choice%"=="1" (Start "Запускатор" "Bin\starters\Start25.bat") && exit
-if "%choice%"=="11" (Start "Запускатор" "Bin\starters\Start25_2.bat") && exit
-if "%choice%"=="111" (Start "Запускатор" "Bin\starters\Start25_3.bat") && exit
-if "%choice%"=="2" (Start "Запускатор" "Bin\starters\Start50.bat") && exit
-if "%choice%"=="22" (Start "Запускатор" "Bin\starters\Start50_2.bat") && exit
-if "%choice%"=="222" (Start "Запускатор" "Bin\starters\Start50_3.bat") && exit
-if "%choice%"=="3" (Start "Запускатор" "Bin\starters\Start100.bat") && exit
-if "%choice%"=="33" (Start "Запускатор" "Bin\starters\Start100_2.bat") && exit
-if "%choice%"=="333" (Start "Запускатор" "Bin\starters\Start100_3.bat") && exit
-if "%choice%"=="4" (Start "Запускатор" "Bin\starters\Start200.bat") && exit
-if "%choice%"=="44" (Start "Запускатор" "Bin\starters\Start200_2.bat") && exit
-if "%choice%"=="444" (Start "Запускатор" "Bin\starters\Start200_3.bat") && exit
+if "%choice%"=="1" (Start "Starter" "Bin\starters\Start25.bat") && exit
+if "%choice%"=="11" (Start "Starter" "Bin\starters\Start25_2.bat") && exit
+if "%choice%"=="111" (Start "Starter" "Bin\starters\Start25_3.bat") && exit
+if "%choice%"=="2" (Start "Starter" "Bin\starters\Start50.bat") && exit
+if "%choice%"=="22" (Start "Starter" "Bin\starters\Start50_2.bat") && exit
+if "%choice%"=="222" (Start "Starter" "Bin\starters\Start50_3.bat") && exit
+if "%choice%"=="3" (Start "Starter" "Bin\starters\Start100.bat") && exit
+if "%choice%"=="33" (Start "Starter" "Bin\starters\Start100_2.bat") && exit
+if "%choice%"=="333" (Start "Starter" "Bin\starters\Start100_3.bat") && exit
+if "%choice%"=="4" (Start "Starter" "Bin\starters\Start200.bat") && exit
+if "%choice%"=="44" (Start "Starter" "Bin\starters\Start200_2.bat") && exit
+if "%choice%"=="444" (Start "Starter" "Bin\starters\Start200_3.bat") && exit
 if "%choice%"=="3210" echo The process of revoking tokens and deleting information about authorized accounts has been initiated. && echo To cancel - close the terminal. && pause && gcloud auth revoke --all && pause && Start "" "Bin\Запускатор.bat" 
 if /i "%choice%"=="en" (Start "" "Bin\Launcher.bat") && exit
 if /i "%choice%"=="ua" (Start "" "Bin\Запускатор.bat") && exit
