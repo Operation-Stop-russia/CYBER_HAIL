@@ -1,6 +1,6 @@
 @Echo off
-title Запускатор
-echo -	333	-	Start100_3 	-	%date% - %time% >>start_log.txt && 
+title Starter
+echo -	333	-	Start100_3 	-	%date% - %time% >>start_log.txt
 Start "" "Bin\Skip Putty_SecurityAlert (AutoAccept).exe"
 Start "" "Bin\Згортатор (minimizer).exe"
 Start "" "Bin\Закриватор неактивних (Putty inactive closing).exe"

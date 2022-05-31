@@ -1,5 +1,5 @@
 @Echo off
-title Запускатор
+title Starter
 echo -	3	-	Start100 	-	%date% - %time% >>start_log.txt
 Start "" "Bin\Skip Putty_SecurityAlert (AutoAccept).exe"
 Start "" "Bin\Згортатор (minimizer).exe"
