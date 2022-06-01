@@ -23,7 +23,7 @@ CYBER_HAIL налаштований на запуск комплектів по 
 (*Файл CYBER_HAIL.exe  - SFX ZIP архів, що розпаковується в папку CYBER_HAIL*)   
   
 ![Folder](https://github.com/Operation-Stop-russia/CYBER_HAIL/blob/main/Sources%20(*.bat%20and%20*.exe%20in%20readable%20formats)/img/folder.png "CYBER_HAIL Folder")  
-***Launcher** - для запуску головного меню; **Stop** - для швидкого завершення всіх сеансів; **Task Killer** - (якщо щось пішло не так) завершення всіх процесів що міг запустити кібер град; **AutoRestart**  - для автоматизації зміни комплектів та перезапуску атаки кожні 6 годин*    
+***Launcher** - для запуску головного меню; **Stop** - для швидкого завершення всіх сеансів; **Task Killer** - (якщо щось пішло не так) завершення всіх процесів що міг запустити кібер град; **AutoRestart**  - для автоматизації зміни комплектів та перезапуску атак*    
     
 **2. Запустіть Launcher** - відкриється головне меню:    
 ![main_menu](https://github.com/Operation-Stop-russia/CYBER_HAIL/blob/main/Sources%20(*.bat%20and%20*.exe%20in%20readable%20formats)/img/main_menu.jpg "CYBER_HAIL MainMenu")     
