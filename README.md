@@ -1,6 +1,6 @@
 # [CYBER_HAIL](https://sites.google.com/view/operationrussia/cyber_hail)
 кібер град
-## DDoS whith Google Cloud Shell
+## DDoS whith Google Cloud Shell (CLI)
     
 Застосунок CYBER_HAIL(кібер град) призначений для автоматичного розгортання маштабних DDoS-атак з мінімальним навантаженням локальних ресурсів, використовуючи CLI/SDK сервісу Google Cloud Shell (*хмарне середовище на основі Debian*).    
     
