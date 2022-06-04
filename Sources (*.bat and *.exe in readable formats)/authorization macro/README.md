@@ -6,7 +6,7 @@
 #### Початкові умови для [authorization.mrf](https://github.com/Operation-Stop-russia/CYBER_HAIL/raw/main/Sources%20(*.bat%20and%20*.exe%20in%20readable%20formats)/authorization%20macro/authorization.mrf)    
 - OS Windows
 - Розширення 1920х1080
-- "голий" Chrome (без профілю, паролів, автозаповнення ітд), розгорнутий на пів екрану зліва, маштаб хрома 67%
+- "голий" Chrome 101 (без профілю, паролів, автозаповнення ітд), розгорнутий на пів екрану зліва, маштаб хрома 67%
 - Ексель з таблицею на пів екрану з правого боку (перший стовпець логіни, другий паролі, вибрана клітинка з початковим логіном)
 - "00" в головному меню (Launcher);
 - як відкрився хром > стартуєм макрос вказавши кількість повторів    
@@ -24,7 +24,7 @@ and repeat playback, adhering to the initial conditions.
 
 #### Initial conditions for authorization.mrf
 - Extension 1920x1080
-- "clean" Chrome (no profile, passwords, autocomplete, etc.), expanded to the left half of the screen, chrome scale 67%
+- "clean" Chrome 101 (no profile, passwords, autocomplete, etc.), expanded to the left half of the screen, chrome scale 67%
 - Excel with table on the half of the screen on the right (first column whith logins , second - passwords, selected cell with first login)
 - enter "00" in the Launcher
 - when chrome opened > start the macro by specifying the number of iterations
