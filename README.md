@@ -34,7 +34,7 @@ CYBER_HAIL налаштований на запуск комплектів по 
 Процедура авторизації кожного акаунта виконується 1 раз. Процес можна переривати. Авторизовані акаунти зберігаються. Щоб переглянути список авторизованих акаунтів введіть **01**     
 Рекомендується одразу додати всi три комплекти акаунтiв     
 **5. Введіть 000** - щоб запустити патчер:     
-![Patcher](https://github.com/Operation-Stop-russia/CYBER_HAIL/blob/main/Sources%20(*.bat%20and%20*.exe%20in%20readable%20formats)/img/patcher.jpg)    
+![Patcher](https://github.com/Operation-Stop-russia/CYBER_HAIL/blob/main/Sources%20(*.bat%20and%20*.exe%20in%20readable%20formats)/img/patcher.png)    
 Оберіть команду та виконайте патч. (*патч можна змінити в будь-який момент*)        
     
 #### ! Налаштування завершено
