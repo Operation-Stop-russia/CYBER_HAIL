@@ -1,0 +1,1 @@
+sudo docker run -it --rm  --cpus="0.5" --rm -it --pull always ghcr.io/arriven/db1000n
