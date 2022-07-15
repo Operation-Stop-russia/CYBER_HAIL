@@ -19,23 +19,23 @@ Echo    º    To configure the CloudSDK:                                         
 Echo    º    enter "0"   to download and install GoogleCloudSDK                                                           º
 Echo    º    enter "00"  to run gcloud_init.bat (adding accounts!) To view the authlist, enter "01"                       º
 Echo    º    enter "000" to run the GoogleCloudSDK patcher (!)                                                            º
-Echo    º                                                                                                                 º
-Echo    º    To deploy and launch attack:                                                                                 º
-Echo    º                                                                                                                 º
-Echo    º    enter "1" to start 25  sessions  (accounts 1-25 (first set))                                                 º
-Echo    º    enter "2" to start 50  sessions  (accounts 1-50 (first set))                                                 º
-Echo    º    enter "3" to start 100 sessions (accounts 1-100 (first set))                                                 º
-Echo    º    enter "4" to start 200 sessions (accounts 1-200 (first set))                                                 º
-Echo    º                                                                                                                 º
-Echo    º    respectively:                                                                                                º
-Echo    º    "11"  - 25  sessions (accounts 26-50   (second set))                                                         º
-Echo    º    "111" - 25  sessions (accounts 51-75   (third set))                                                          º
-Echo    º    "22"  - 50  sessions (accounts 51-100  (second set))                                                         º
-Echo    º    "222" - 50  sessions (accounts 101-150 (third set))                                                          º
-Echo    º    "33"  - 100 sessions (accounts 101-200 (second set))                                                         º
-Echo    º    "333" - 100 sessions (accounts 201-301 (third set))                                                          º
-Echo    º    "44"  - 200 sessions (accounts 201-400 (second set))                                                         º
-Echo    º    "444" - 200 sessions (accounts 401-600 (third set))                                                          º
+Echo    º                                                                                              ²²²²²              º
+Echo    º    To deploy and launch attack:                                                            ²²²²²²               º
+Echo    º                                                                                          ²²²²²²²                º
+Echo    º    enter "1" to start 25  sessions  (accounts 1-25 (first set))                    °°°°±±±±±±±±°°°              º
+Echo    º    enter "2" to start 50  sessions  (accounts 1-50 (first set))                °°°°°°±±±±±±±±±°°°°°°°°          º
+Echo    º    enter "3" to start 100 sessions (accounts 1-100 (first set))                °°°°±±±±±±±±±±°°°°°°°°°          º
+Echo    º    enter "4" to start 200 sessions (accounts 1-200 (first set))                °°±±±ÛÛÛ±±ÛÛÛÛÛÛÛÛÛ±±±±²²²²²²    º
+Echo    º                                                                                ±±±±±ÛÛÛ±±±±±ÛÛÛ±±±±±±±²²²²      º
+Echo    º    respectively:                                                             ²²±±±±±ÛÛÛ±±±±±ÛÛÛ±±±±±±±²²        º
+Echo    º    "11"  - 25  sessions (accounts 26-50   (second set))                    ²²²²±±±±±ÛÛÛ±±±±±ÛÛÛ±±±±±±±          º
+Echo    º    "111" - 25  sessions (accounts 51-75   (third set))                   ²²²²²²±±±±±ÛÛÛ±±±±±ÛÛÛ±±±±±°°          º
+Echo    º    "22"  - 50  sessions (accounts 51-100  (second set))                         °°°°°°°°±±±±±±±±±±°°°           º
+Echo    º    "222" - 50  sessions (accounts 101-150 (third set))                           °°°°°°±±±±±±±±±°°°°            º
+Echo    º    "33"  - 100 sessions (accounts 101-200 (second set))                            °°°±±±±±±±±°°°°              º
+Echo    º    "333" - 100 sessions (accounts 201-301 (third set))                               ²±±±±±±°°°                 º
+Echo    º    "44"  - 200 sessions (accounts 201-400 (second set))                             ²²²²²²                      º
+Echo    º    "444" - 200 sessions (accounts 401-600 (third set))                             ²²²²²                        º
 Echo    º                                                                                                                 º
 Echo    º    To revoke tokens and de-authorize all accounts, enter "3210" (if no need - do NOT apply)                     º
 Echo    ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
@@ -64,7 +64,3 @@ Echo.
 Echo.
 Echo  ! Incorrect input
 goto m1
-
-
-
-
